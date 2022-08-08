@@ -9,11 +9,13 @@ import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.Topology;
 import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.KStream;
+import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 import java.util.Properties;
 
 @Data
+@Component
 public class KafkaConnector {
 
     private final StreamsBuilder customerDetailsStreamBuilder = new StreamsBuilder();
